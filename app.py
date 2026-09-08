@@ -2,7 +2,9 @@ def add(a, b):
     return a + b
 
 def divide(a, b):
-    return a / b  # intentional bug candidate
+    if b == 0:
+        raise ValueError("division by zero")
+    return a / b
 
 if __name__ == "__main__":
-    print(divide(10, 0))
+    print(divide(10, 2))
