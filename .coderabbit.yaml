@@ -1,2 +1,5 @@
-reviews:
-  enable_prompt_for_ai_agents: true
+knowledge_base:
+  code_guidelines:
+    enabled: true
+    filePatterns:
+      - "Kentmurphy00/cr-standards:standards.md"
